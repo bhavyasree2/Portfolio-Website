@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/467e239f2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+     <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo" >
+            <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><strong>CSE Student</strong></p>
+            <h1>Hi,I'm <br><span>Bhavya Sree</span></h1>
+        </div>
+     </div>
+ </div>
+ <!----about-->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/img2.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Ever since I wrote my first line of code, I've been captivated by the potential of technology to shape the future. From designing efficient algorithms to creating elegant user interfaces, I find joy in every aspect of the software development process.As a lifelong learner, I thrive in the dynamic landscape of Computer Science. Every challenge I encounter is an opportunity to acquire new skills and expand my horizons. I embrace the constant evolution of technology as it fuels my curiosity and keeps me motivated.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('accomplishments')">Accomplishments</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>JAVA,C,C++,HTML</span><br>My journey through Java, C, C++, and HTML reflects my passion for problem-solving, creative thinking, and building functional solutions. I leverage the strengths of each language to tackle diverse challenges, from software development to web design, with a combination of precision and creativity.</li>
+                    <li><span>OS,DBMS,COA</span><br> My knowledge of OS, COA, and DBMS, I've developed a holistic understanding of how software interacts with hardware and data. This synthesis empowers me to create applications that not only meet functional requirements but also perform optimally and scale effectively<li>
+                    <li><span>Windows,Ubuntu</span><br>With a foot in both the Windows and Ubuntu worlds, I've cultivated a versatile approach to operating systems. My fluency in both platforms allows me to seamlessly transition between environments, leveraging the strengths of each to tackle a wide array of tasks and challenges.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="accomplishments">
+                <ul>
+                    <li><span>International Maths Olympiad(IMO)</span><br>I'm proud to share that my passion for problem-solving and mathematical exploration led me to achieve a remarkable feat – winning a gold medal in an international mathematics olympiad. This achievement not only represents my dedication to the art of mathematics but also underscores my commitment to pushing boundaries and striving for excellence.</li>
+                    <li><span>Member of Artista Club GNITS</span><br>Beyond the world of coding and algorithms, I'm a proud member of the GNITS Art club, where I channel my creativity into vibrant and expressive forms.Whether it's through code or canvas, my overarching goal is to innovate. The art club has provided me with a canvas where I can translate abstract concepts into visual representations, showcasing my ability to think outside the box and deliver novel solutions.<br></li>
+                    <li><span>GNITS Model United Nations</span><br>Beyond the realm of technology, I've embraced the world of international diplomacy and discourse as an enthusiastic participant in the GNITS Model United Nations (MUN) events.Participating in MUN has ignited my passion for understanding the world's intricacies, from politics and economics to culture and human rights. </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>G Narayanamma Institute of Technology And Science(For Women)</span><br>Bachelor of Technology(BTECH),CSE</li>
+                    <li><span>Sri Chaitanya junior college</span><br>Intermediate</li>
+                    <li><span>Hindu Public School</span><br>1-10th class,CBSE</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!------services-->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sit id vel, accusamus velit quos ab error iusto tempora, voluptate quibusdam vero non. Error laborum sit quasi perferendis sapiente ratione?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sit id vel, accusamus velit quos ab error iusto tempora, voluptate quibusdam vero non. Error laborum sit quasi perferendis sapiente ratione?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sit id vel, accusamus velit quos ab error iusto tempora, voluptate quibusdam vero non. Error laborum sit quasi perferendis sapiente ratione?</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--------porfolio------>
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/img_5.png">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>This app connects people all around the world.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/img_2.avif">
+                <div class="layer">
+                    <h3>Music APP</h3>
+                    <p>This app connects people all around the world.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/img_4.avif">
+                <div class="layer">
+                    <h3>Online Shopping APP</h3>
+                    <p>This app connects people all around the world.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+<!--------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bhavya200323@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <a href="#" class="btn btn2" onclick="downloadFile()">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bhavya Sree</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+ </script>
+ <script>
+    function downloadFile() {
+    var link = document.createElement('a');
+    link.href = 'images/Resume-G%20BHAVYA%20SREE.pdf';
+    link.download = 'Resume-G_BHAVYA_SREE.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(function() {
+                window.location.href = 'http://127.0.0.1:5500/index.html';
+            }, 500);
+    }
+    </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOgs9rq2RCQrTydkv8_X0py1urhf6sK6P4gs7F4bVkZehqylwnPVX0GkVAhzhpRewT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ msg.innerHTML="Message Sent Succesfully"
+        setTimeout(function(){
+            msg.innerHTML= ""
+        },5000)
+    form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
